@@ -22,6 +22,8 @@ spec:
         - containerPort: 8085
           name: http
           protocol: TCP
+      imagePullSecrets:
+        - name: regcred
 # service type loadbalancer       
 ---
 apiVersion: v1
